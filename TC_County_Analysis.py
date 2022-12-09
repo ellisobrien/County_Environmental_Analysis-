@@ -137,7 +137,7 @@ def tract_map2(input_var):
 tract_map2(variable_to_map_two)
 
 
-st.subheader('Figure 3: National Risk Index Data Census Tract')
+st.subheader('Figure 3: National Risk Index Data by Census Tract')
 
 #Enter Variables to Map here 
 variable_to_map_three=st.selectbox(label="Select Variable",
