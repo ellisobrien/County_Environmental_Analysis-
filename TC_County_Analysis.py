@@ -35,7 +35,7 @@ with urlopen('https://raw.githubusercontent.com/ellisobrien/County_Environmental
     
     
 #county
-County_Name=st.selectbox(label="Select Region",
+County_Name=st.selectbox(label="Select Region for Maps",
 options=('Fresno County', 'District of Columbia', 'Wayne County', 'Navajo County', 'Miami-Dade County', 'Chatham County',
 'Denver County','Lumbee River', 'Clark County','Mineral County'))
 
