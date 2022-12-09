@@ -174,7 +174,7 @@ tract_map3(variable_to_map_three)
 
 
 
-st.subheader('Figure 4: Relationship between variables All Counties')
+st.subheader('Figure 4: Relationship Between Variables (All Counties)')
 
 
 variable_to_map_x=st.selectbox(label="Select X Variable",
