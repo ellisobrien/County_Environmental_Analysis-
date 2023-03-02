@@ -36,8 +36,8 @@ with urlopen('https://raw.githubusercontent.com/ellisobrien/County_Environmental
     
 #county
 County_Name=st.selectbox(label="Select Region for Maps",
-options=('Fresno County', 'District of Columbia', 'Wayne County', 'Navajo County', 'Miami-Dade County', 'Chatham County',
-'Denver County','Lumbee River', 'Clark County','Mineral County'))
+options=('Fresno County', 'Contra Costa County', 'San Bernardino County', 'Riverside County', 'District of Columbia', 'Wayne County', 'Miami-Dade County', 'Chatham County',
+'Denver County','Lumbee River', 'Clark County'))
 
 #Enter Variables to Map here 
 variable_to_map='Identified_as_disadvantaged'
@@ -56,9 +56,9 @@ elif County_Name == 'District of Columbia':
 elif County_Name == 'Wayne County':
     x=42.344638
     y=-83.130381
-elif County_Name == 'Navajo County':
-    x=36.242564
-    y=-110.4296 
+elif County_Name == 'San Bernardino County':
+    x=34.658888384164456
+    y=-116.69806481686935
 elif County_Name == 'Miami-Dade County':
     x=25.77903
     y=-80.192111
@@ -74,9 +74,12 @@ elif County_Name == 'Lumbee River':
 elif County_Name == 'Clark County':
     x=36.188512
     y=-115.18604
-elif County_Name == 'Mineral County':
-    x=38.51039764409562
-    y=-118.34411186319021
+elif County_Name == 'Contra Costa County':
+    x=37.92948789853582
+    y=-122.06628967522303
+elif County_Name == 'Riverside County':
+    x=33.72040852666184
+    y=-116.02346812017169
 
 st.subheader('Figure 1: Justice40 Status by Census Tract')
 
@@ -243,8 +246,8 @@ scatter_plot(variable_to_map_x, variable_to_map_y)
 st.subheader('Figure 5: Expected Annual Loss by Peril')
 
 County_Name2=st.selectbox(label="Select Region",
-options=('Fresno County', 'District of Columbia', 'Wayne County', 'Miami-Dade County', 'Navajo County', 'Chatham County',
-'Denver County','Lumbee River', 'Clark County','Mineral County'))
+options=('Fresno County', 'Contra Costa County', 'San Bernardino County', 'Riverside County', 'District of Columbia', 'Wayne County', 'Miami-Dade County', 'Chatham County',
+'Denver County','Lumbee River', 'Clark County'))
 
 
 
