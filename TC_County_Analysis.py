@@ -36,7 +36,7 @@ with urlopen('https://raw.githubusercontent.com/ellisobrien/County_Environmental
     
 #county
 County_Name=st.selectbox(label="Select Region for Maps",
-options=('Fresno County', 'Contra Costa County', 'San Bernardino County', 'Riverside County', 'District of Columbia', 'Wayne County', 'Miami-Dade County', 'Chatham County',
+options=('Fresno County', 'Contra Costa County', 'San Bernardino/Riverside County', 'District of Columbia', 'Wayne County', 'Miami-Dade County', 'Chatham County',
 'Denver County','Lumbee River', 'Clark County'))
 
 #Enter Variables to Map here 
@@ -46,6 +46,8 @@ variable_to_map='Identified_as_disadvantaged'
 Sepher_description='Disadvantaged'
 
 map_dat = csv[['FIPS', 'County_Name', variable_to_map]]
+map_dat=map_dat[map_dat.County_Name == County_Name]
+
 
 if County_Name == 'Fresno County':
     x=36.137084
@@ -56,9 +58,6 @@ elif County_Name == 'District of Columbia':
 elif County_Name == 'Wayne County':
     x=42.344638
     y=-83.130381
-elif County_Name == 'San Bernardino County':
-    x=34.658888384164456
-    y=-116.69806481686935
 elif County_Name == 'Miami-Dade County':
     x=25.77903
     y=-80.192111
@@ -77,10 +76,10 @@ elif County_Name == 'Clark County':
 elif County_Name == 'Contra Costa County':
     x=37.92948789853582
     y=-122.06628967522303
-elif County_Name == 'Riverside County':
-    x=33.72040852666184
-    y=-116.02346812017169
-
+elif County_Name == 'San Bernardino/Riverside County':
+    x=34.54531451676656
+    y=-116.23342163636713
+    
 st.subheader('Figure 1: Justice40 Status by Census Tract')
 
 #defining function to map input variable  
@@ -246,7 +245,7 @@ scatter_plot(variable_to_map_x, variable_to_map_y)
 st.subheader('Figure 5: Expected Annual Loss by Peril')
 
 County_Name2=st.selectbox(label="Select Region",
-options=('Fresno County', 'Contra Costa County', 'San Bernardino County', 'Riverside County', 'District of Columbia', 'Wayne County', 'Miami-Dade County', 'Chatham County',
+options=('Fresno County', 'Contra Costa County', 'San Bernardino/Riverside County', 'District of Columbia', 'Wayne County', 'Miami-Dade County', 'Chatham County',
 'Denver County','Lumbee River', 'Clark County'))
 
 
