@@ -143,7 +143,7 @@ tract_map2(variable_to_map_two)
 
 st.subheader('Figure 3: National Risk Index Data by Census Tract')
 
-st.markdown('_The National Risk Index (NRI) is a dataset maintained by FEMA that tracks census tract level disaster risk across 18 perils. In addition to peril specific risk, the NRI contains aggregate risk metrics such as Composite Risk Score, Social Vulnerability Score, and Expected Annual Financial Loss. The NRI is one of the most comprehensive publicly available datasets related to natural disaster and climate risk. More information can be found on the NRI website: https://hazards.fema.gov/nri/')
+st.markdown('The National Risk Index (NRI) is a dataset maintained by FEMA that tracks census tract level disaster risk across 18 perils. In addition to peril specific risk, the NRI contains aggregate risk metrics such as Composite Risk Score, Social Vulnerability Score, and Expected Annual Financial Loss. The NRI is one of the most comprehensive publicly available datasets related to natural disaster and climate risk. More information can be found on the NRI website: https://hazards.fema.gov/nri/')
 
 #Enter Variables to Map here 
 variable_to_map_three=st.selectbox(label="Select Variable",
